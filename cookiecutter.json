@@ -1,0 +1,32 @@
+{
+  "__project_names": [
+    "Woody",
+    "Buzz",
+    "Jessie",
+    "BoPeep",
+    "Rex",
+    "Hamm",
+    "SlinkyDog",
+    "Bullseye",
+    "DukeCaboom",
+    "Trixie",
+    "Buttercup",
+    "Lotso",
+    "StinkyPete",
+    "Zurg"
+  ],
+  "__random_descriptions": [
+    "escape Sid's backyard",
+    "get home before Andy leaves for college",
+    "survive recess at Sunnyside Daycare",
+    "bring Forky back to Bonnie on her family road trip"
+  ],
+  "project_name": "{{ cookiecutter.__project_names | random }}",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "project_description": "{{ cookiecutter.project_name }} is an app that can help you {{ cookiecutter.__random_descriptions | random }}.",
+  "author": "Victor Fernandez III",
+  "year": 2026,
+  "github_organization": "deathlabs",
+  "github_repository": "{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}",
+  "backend_port": 8002
+}
