@@ -27,6 +27,5 @@
   "author": "Victor Fernandez III",
   "year": 2026,
   "github_organization": "deathlabs",
-  "github_repository": "{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}",
-  "backend_port": 8002
+  "github_repository": "{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}"
 }

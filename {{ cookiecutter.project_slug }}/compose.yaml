@@ -1,17 +1,22 @@
 services:
 
-  {{ cookiecutter.project_slug }}:
-    profiles: [all]
-    build: src
-    image: {{ cookiecutter.project_slug }}/mcp:latest
-    container_name: {{ cookiecutter.project_slug }}_mcp
+  database:
+    profiles: [ all, backend, database ]
+    build: database
+    image: {{ cookiecutter.project_slug }}/database:latest
+    container_name: {{ cookiecutter.project_slug }}-database
     ports:
-      - "{{ cookiecutter.port }}:{{ cookiecutter.port }}"
-    environment:
-      FASTMCP_PORT: "{{ cookiecutter.port }}"
+      - "{{ cookiecutter.database_port }}:{{ cookiecutter.database_port }}"
+    volumes:
+      - {{ cookiecutter.project_slug }}_database:/var/lib/postgresql/data
+    env_file:
+      - database/.env
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:{{ cookiecutter.port }}/api/v1/health > /dev/null || exit 1"]
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
       interval: 10s
       timeout: 5s
       retries: 2
       start_period: 5s
+
+volumes:
+  {{ cookiecutter.project_slug }}_database:

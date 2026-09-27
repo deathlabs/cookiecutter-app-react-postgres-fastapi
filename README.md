@@ -1,8 +1,8 @@
-# `cookiecutter-app-react-postgres-fastapi`
+# `cookiecutter-react-fastapi-postgres`
 
-[![CI Pipeline](https://github.com/deathlabs/cookiecutter-app-react-postgres-fastapi/actions/workflows/ci.yaml/badge.svg)](https://github.com/deathlabs/cookiecutter-app-react-postgres-fastapi/actions/workflows/ci.yaml)
+[![CI Pipeline](https://github.com/deathlabs/cookiecutter-react-fastapi-postgres/actions/workflows/ci.yaml/badge.svg)](https://github.com/deathlabs/cookiecutter-react-fastapi-postgres/actions/workflows/ci.yaml)
 
-A Cookiecutter template for creating a full-stack app consisting of a React-frontend, PostgreSQL database, and FastAPI backend. 
+A Cookiecutter template for creating a full-stack app consisting of a React-frontend, FastAPI backend, and PostgreSQL database. 
 
 ## Quickstart
 
@@ -15,7 +15,7 @@ The instructions below assume you have or will get the following software instal
 **Step 1.** Run Cookiecutter against the GitHub repository.
 
 ```bash
-cookiecutter https://github.com/deathlabs/cookiecutter-app-react-postgres-fastapi.git
+cookiecutter https://github.com/deathlabs/cookiecutter-react-fastapi-postgres.git
 ```
 
 When prompted, either accept the default values or provide your own.
@@ -33,13 +33,13 @@ make
 **Step 1.** Clone the repository.
 
 ```bash
-git clone https://github.com/deathlabs/cookiecutter-app-react-postgres-fastapi.git
+git clone https://github.com/deathlabs/cookiecutter-react-fastapi-postgres.git
 ```
 
 **Step 2.** Change to the repository directory.
 
 ```bash
-cd cookiecutter-app-react-postgres-fastapi
+cd cookiecutter-react-fastapi-postgres
 ```
 
 **Step 3.** Use the Makefile to create, start, and test an example app. The Makefile places the created app in the `build` folder, in a subfolder named after the server.
