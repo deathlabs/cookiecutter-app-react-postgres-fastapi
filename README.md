@@ -2,7 +2,7 @@
 
 [![CI Pipeline](https://github.com/deathlabs/cookiecutter-react-fastapi-postgres/actions/workflows/ci.yaml/badge.svg)](https://github.com/deathlabs/cookiecutter-react-fastapi-postgres/actions/workflows/ci.yaml)
 
-A Cookiecutter template for creating a full-stack app consisting of a React-frontend, FastAPI backend, and PostgreSQL database. 
+A Cookiecutter template for creating a full-stack app consisting of a React frontend, FastAPI backend, and PostgreSQL database. 
 
 ## Quickstart
 
